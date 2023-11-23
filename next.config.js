@@ -15,6 +15,10 @@ module.exports = {
         source: "/quizMaster",
         destination: "https://chat.openai.com/g/g-JL0Vjp0DR-quizmastergpt",
       },
+      {
+        source: "/quiz",
+        destination: "https://chat.openai.com/g/g-JL0Vjp0DR-quizmastergpt",
+      },
    ];
   },
 };
