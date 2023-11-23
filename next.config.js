@@ -1,32 +1,23 @@
-// /**
-//  * @type {import('next').NextConfig}
-//  */
-// const withMDX = require('@next/mdx')({
-//     extension: /\.(md|mdx)$/,
-// })
 
 
-
-// const nextConfig = {
-    
-//     // Means all of the following file extensions can be pages
-//     pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx']
-// }
-
-
-// module.exports = withMDX(nextConfig)
-
-
-
-  
-/**
- * @type {import('next').NextConfig}
- */
-
-const nextConfig = { }
-
-module.exports = nextConfig
-
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: "/quizmaster",
+        destination: "https://chat.openai.com/g/g-JL0Vjp0DR-quizmastergpt",
+      },
+      {
+        source: "/QuizMaster",
+        destination: "https://chat.openai.com/g/g-JL0Vjp0DR-quizmastergpt",
+      },
+      {
+        source: "/quizMaster",
+        destination: "https://chat.openai.com/g/g-JL0Vjp0DR-quizmastergpt",
+      },
+   ];
+  },
+};
 
 
   

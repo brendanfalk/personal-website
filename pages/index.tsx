@@ -50,18 +50,18 @@ export default function Home({
 <p>I'm Brendan and I'm the co-founder & CEO of <a href="https://fig.io?ref=brendan_personal_website">Fig</a></p>
 
 <ul>
-  <li>📍 { " " } I am from Australia (Syd / Cbr) 🦘 and now live in SF 🌉</li>
-  <li>👍 I went to college at Harvard and worked at Brex</li>
-  <li>📫 You can find me on <a href="https://twitter.com/brendanfalk">Twitter</a>, <a href="https://www.linkedin.com/in/brendanfalk/">LinkedIn</a> and <a href="mailto:brendan+pw@fig.io">email</a></li>
+  <li>📍 { " " } I am from Australia and now live in SF</li>
+  <li>👍 I went to college at Harvard </li>
+  <li>🚀 I was co-founder/CEO of <a href="https://fig.io">Fig</a> and we were recently acquired by Amazon</li>
+  <li>📫 You can find me on <a href="https://twitter.com/brendanfalk">Twitter</a>, <a href="https://www.linkedin.com/in/brendanfalk/">LinkedIn</a> and <a href="mailto:brendan+personalwebsite@fig.io">email</a></li>
 </ul>
 
 
       </section>
+
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
-
-
 
            {(allPostsData|| []).length ?
           allPostsData.map(({ id, date, title }) => (
@@ -76,7 +76,7 @@ export default function Home({
             </li>
           ))
         : 
-        <p>Coming soon</p>
+        <p>I'll get around to this eventually...</p>
         }
         </ul>
       </section>
